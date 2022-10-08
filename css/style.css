@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Signika:wght@300;400;500;600;700&display=swap');
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-color: #eee;
+	/* zaimportowany font deklarujemy dla body aby wszystko bylo w tym foncie essaB)*/
+	font-family: 'Lora', sans-serif;
+}
+
+nav{
+	background-color: #000000;
+	height: 60px;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 3px 10px #333;
+	z-index: 1;
+}
+nav ol{
+	display: flex;
+	justify-content: space-evenly;
+	line-height: 60px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+nav ol li{
+	flex-grow: 1;
+	text-align: center;
+}
+nav ol li a {
+	text-decoration: none;
+	color: #dc7d10;
+	display: block;
+	font-weight: 700;
+}
+nav ol li a:hover{
+	background-color: #88B5BF;
+	border-radius: 10px;
+}
+/* style globalne dla WSZYSTKICH sekcji */
+section{
+	min-height: 90vh;
+	display: flex;/*flex ustawia zawartośc tego kontenera obok siebie*/
+	align-items: center; /*wyśrodkowanie elemnetów ustawionych obok siebie*/
+}
+
+/* definiujemy klase sekcji */
+/* stawiamy przed kropke */
+
+.zawartosc1200{
+	max-width: 1200px;
+	margin: auto;/* środkujemy elemnt*/
+	position: relative;
+	display: flex;
+}
+
+#top{
+	background: url(../img/tlo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+}
+.overlay{
+	background-color: rgba(0,0,0,0.3);
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+#top .zawartosc1200{
+	display: flex;
+	align-items: center;
+    flex-grow: 1; /* !!! */
+    justify-content: flex-end;
+}
+#top h1{
+	text-align: center;
+	font-size: 4em;
+	font-weight: 500;
+	color: #2d4059;
+}
+
+#tresc{
+	background-color: #88B5BF;
+}
+#tresc .zawartosc1200{
+	display: flex;
+}
+#tresc .zawartosc1200 article{
+	flex: 1 1 400px;
+	padding: 10px;
+}
+#tresc img{
+	display: block;
+	margin: 0 auto;
+	width: 50px;
+}
+#tresc .zawartosc1200 article h2{
+	font-size: 2em;
+	color: #2d4059;
+	font-family: 'Signika', serif;
+	margin-bottom: 30px;
+	text-align: center;
+	margin-top: 15px;
+}
+#tresc .zawartosc1200 article p{
+	text-align: center;
+	font-weight: 400;
+	color: #4D5D73;
+	line-height: 22px;
+	background-color: #F2D5BB;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+#zdjecie_w_tle{
+	background: url("../img/słodziak.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#zdjecie_w_tle h3{
+	text-align: center;
+	font-size: 8em;
+	font-weight: 700;
+	color: #2d4059;
+    color: orangered;
+    mix-blend-mode: screen;
+}
+
+#wlasne{
+	background-color: #88B5BF;
+	flex-direction: column;
+	padding-bottom: 100px;
+}
+#wlasne h4{
+	font-size: 4em;
+	padding-top: 120px;
+	margin-bottom: 30px;
+	color: black;
+	font-family: "Lora";
+}
+#wlasne .zawartosc1200 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#wlasne .zawartosc1200 article{
+	margin: 0 5px 10px 5px;
+    background-color: white;
+    padding: 5px;
+} 
+
+#wlasne .zawartosc1200 img{
+	width: 300px;
+	transition: 0.5s;
+}
+#wlasne .zawartosc1200 img:hover{
+	transform: scale(1.035);
+}
+#wlasne .zawartosc1200 p{
+	color: #2d4059;
+    padding-top: 10px;
+}
+footer{
+	background-color: #000000;
+    padding: 10px;
+}
+footer .zawartosc1200{
+	display: flex;
+	justify-content: center;
+}
+footer .zawartosc1200 .logo2 img{
+	width: 50px;
+	position: absolute;
+	right: 50px;
+	top: 23px
+}
+footer .zawartosc1200 .logo2 h1{
+	position: absolute;
+	right: 22px;
+	top: 111px;
+	color: #DC7D12;
+}
+footer .zawartosc1200 article{
+	margin: 30px;
+}
+a{
+	text-decoration: none;
+}
+h6{
+	text-align: center;
+	background-color: #000000;
+    padding: 10px 50px;
+	color: #DC7D12;
+}
